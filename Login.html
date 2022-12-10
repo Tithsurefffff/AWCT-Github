@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Angle </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #000000;}
+
+.head{
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+
+.name input[type="text"],[type="password"]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    
+    border-color: #000000;
+    box-sizing: border-box;
+}
+
+
+button {
+    background-color: #2600ff;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.register button{
+    padding: 0 0 0 10px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    margin: 3px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+    background-color: #c7a1ff;
+}
+
+.cancelbtn {
+    width: auto; 
+    padding: 10px 18px;
+    background-color: #000000;
+}
+
+.sey {
+    text-align: center;
+    margin: 2px 0 12px 0;
+    
+    padding: 1px 1px 1px 0;
+    color: white;
+    background: rgb(0, 0, 0);
+}
+.conter a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0 0 0 100px;
+}
+
+.conter {
+    padding: 16px;
+}
+.Need{
+    padding: 0 0 0 20px;
+}
+.Need :hover{
+    color: #000000;
+}
+.forgot a{
+    padding: 0 0 0 50px;
+}
+.forgot :hover{
+    color: #000000;
+}
+.conter i{
+    position: absolute;
+    z-index: 9999;
+    padding-left: 325px;
+    line-height: 3.7;
+    color: #000000;
+}
+
+
+/* nge styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+.head .conter i{
+    position: absolute;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    margin: 15px 0 0 -45px;
+}
+i.fa-lock{
+    margin-top: 35px;
+}
+
+  }
+  
+</style>
+</head>
+<body>
+
+<form>
+    <div class="head">
+        
+        <div class="sey">
+            
+            <p><i class="fa-brands fa-android"></i> Angle</p>
+        </div>
+
+        <div class="conter">
+            <div class="name">
+
+                <label for="uname">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Enter Username " name="uname" required>
+                <br><br></label>
+                <label for="psw">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+           </label>
+         </div>    
+
+                <br><br>
+                <label>
+            <div class="forgot">
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+                <a href="password">Forgot password?</a>
+            </div>        
+                
+                </label>   
+                 
+                <br><br>
+                <button type="submit">Login</button>
+                <br><br>
+
+            <div class="Need">
+                <a href="##"> Need to Signup? </a>
+            </div>
+                <br>
+            <div class="register">
+                <button type="submit"><h3> Register Now </h3></button>
+            </div>
+        
+
+        </div>
+        </div>
+    </div>     
+</form>
+
+</body>
+</html>
